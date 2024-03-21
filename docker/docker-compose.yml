@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_USER: dbu
+      POSTGRES_PASSWORD: dbp
+      POSTGRES_DB: dbtest
+    ports:
+      - "5432:5432"
