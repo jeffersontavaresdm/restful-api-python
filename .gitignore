@@ -1,0 +1,38 @@
+# Arquivos e pastas específicos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambiente virtual (ex: virtualenv, venv, pipenv)
+venv/
+env/
+.venv/
+pipfile.lock
+
+# Arquivos de log
+*.log
+
+# Arquivos de configuração sensíveis
+config.py
+instance/
+
+# Arquivos gerados automaticamente
+*.db
+*.sqlite
+
+# Dependências e pacotes Python
+lib/
+lib64/
+bin/
+include/
+
+# Arquivos de build
+build/
+dist/
+
+# Outros arquivos e pastas gerados automaticamente
+*.swp
+.DS_Store
+.idea
+*.iml
