@@ -1,10 +1,15 @@
 # PYTHON-FLASK RESTFUL API
 
-RESTful API using Python and Flask to practice and improve knowledge
+A simple RESTful API using Python and Flask to practice and improve knowledge
 
 ### install
 ```
 pip install -r requirements.txt
+```
+
+### up a docker container with a postgresql database
+```
+docker compose -f docker/docker-compose.yml up -d
 ```
 
 ### run
@@ -12,17 +17,8 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### first test
-```
-curl -X GET 'http://127.0.0.1:5000/health/'
-```
-
-### to more tests
-```
-cd docker/ && docker compose up
-```
-
-### routes
+### all routes
+- health of server (GET): `http://127.0.0.1:5000/health`
 - list users (GET): `http://127.0.0.1:5000/users`
 - create user (POST): `http://127.0.0.1:5000/users`
 - update user (PUT): `http://127.0.0.1:5000/users/{user_id}`
