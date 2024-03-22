@@ -7,7 +7,7 @@ A simple RESTful API using Python and Flask to practice and improve knowledge
 pip install -r requirements.txt
 ```
 
-### up a docker container with a postgresql database
+### up database
 ```
 docker compose -f docker/docker-compose.yml up -d
 ```
