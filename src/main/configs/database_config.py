@@ -3,9 +3,9 @@ import psycopg2
 
 def database_connect() -> tuple:
     connection = psycopg2.connect(
-        dbname="dbtest",
-        user="dbu",
-        password="dbp",
+        dbname="testdb",
+        user="testdb",
+        password="testdb",
         host="localhost",
         port="5432"
     )
