@@ -1,6 +1,6 @@
 # PYTHON-FLASK RESTFUL API
 
-API RESTful utilizando Python e Flask para praticar e aperfeiçoar os conhecimentos
+RESTful API using Python and Flask to practice and improve knowledge
 
 ### install
 ```
@@ -16,6 +16,17 @@ python app.py
 ```
 curl -X GET 'http://127.0.0.1:5000/health/'
 ```
+
+### to more tests
+```
+cd docker/ && docker compose up
+```
+
+### routes
+- list users (GET): `http://127.0.0.1:5000/users`
+- create user (POST): `http://127.0.0.1:5000/users`
+- update user (PUT): `http://127.0.0.1:5000/users/{user_id}`
+- delete user (DELETE): `http://127.0.0.1:5000/users/{user_id}`
 
 #
 
