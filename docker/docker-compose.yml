@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  postgres:
+  test-database:
     image: postgres:14-alpine
     environment:
-      POSTGRES_USER: dbu
-      POSTGRES_PASSWORD: dbp
-      POSTGRES_DB: dbtest
+      POSTGRES_USER: testdb
+      POSTGRES_PASSWORD: testdb
+      POSTGRES_DB: testdb
     ports:
       - "5432:5432"
