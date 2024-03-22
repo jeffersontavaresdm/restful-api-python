@@ -1,4 +1,4 @@
-from queries.user_queries import create_user_table_query
+from src.resource.queries.user_queries import create_user_table_query
 from src.main.annotations.open_close_connection import open_close_connection
 
 

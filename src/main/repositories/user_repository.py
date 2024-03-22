@@ -1,7 +1,7 @@
-from queries.user_queries import get_users_query, delete_user_query, update_user_query, check_user_query
-from queries.user_queries import insert_user_query
+from src.resource.queries.user_queries import get_users_query, delete_user_query, update_user_query, check_user_query
+from src.resource.queries.user_queries import insert_user_query
 from src.main.annotations.open_close_connection import open_close_connection
-from src.main.exception.user_not_found_exception import UserNotFoundException
+from src.main.exceptions.user_not_found_exception import UserNotFoundException
 from src.main.models.user import User, UserPayload
 
 

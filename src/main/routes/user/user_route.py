@@ -1,7 +1,7 @@
 from flask import Blueprint, request
 
 from src.main.models.user import User, UserPayload
-from src.main.repository.user_repository import get_users, create_user, update_user, delete_user
+from src.main.repositories.user_repository import get_users, create_user, update_user, delete_user
 from src.main.response.response import APIResponse
 
 user_route = Blueprint("user", __name__)
