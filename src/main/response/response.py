@@ -25,8 +25,8 @@ class APIResponse:
         return APIResponse.build_response("error", 400, InternalCode.BAD_REQUEST, data)
 
     @staticmethod
-    def not_found_response():
-        return APIResponse.build_response("error", 404, InternalCode.NOT_FOUND)
+    def not_found_response(data=None):
+        return APIResponse.build_response("error", 404, InternalCode.NOT_FOUND, data)
 
     @staticmethod
     def error_response(data=None):

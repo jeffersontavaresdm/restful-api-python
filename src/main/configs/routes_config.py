@@ -2,7 +2,7 @@ from flask import Flask
 
 from src.main.configs.create_tables import create_user_table
 from src.main.routes.health_route import health_route
-from src.main.routes.user.user_route import user_route
+from src.main.routes.user.user_route import user_routes
 
 
 def configure_all(app: Flask):
@@ -12,7 +12,7 @@ def configure_all(app: Flask):
 
 def routes_config(app: Flask):
     app.register_blueprint(health_route, url_prefix="/health")
-    app.register_blueprint(user_route, url_prefix="/users")
+    app.register_blueprint(user_routes, url_prefix="/users")
 
 
 def create_tables():
