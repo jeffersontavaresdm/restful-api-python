@@ -15,3 +15,7 @@ check_user_query = "SELECT id FROM users WHERE id = %s"
 update_user_query = "UPDATE users SET name = %s, email = %s WHERE id = %s"
 
 delete_user_query = "DELETE FROM users WHERE id = %s"
+
+get_user_by_id_query = "SELECT * FROM users WHERE id = %s ORDER BY id DESC LIMIT 1"
+
+get_user_by_name_query = "SELECT * FROM users WHERE name = %s ORDER BY id DESC LIMIT 1"
